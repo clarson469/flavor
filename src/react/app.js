@@ -18,8 +18,8 @@ class App extends Component {
       search_string: '',
       search_response: [],
       focus: null,
-      popup_open: true,
-      popup_display: 'filters',
+      popup_open: false,
+      popup_display: '',
       popup_closing: false,
       filterOn: false,
       filter: {}
