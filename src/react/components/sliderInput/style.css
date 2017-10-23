@@ -1,0 +1,23 @@
+.slider-input-input {
+  width: 50px;
+}
+
+.slider-input-bar {
+  position: relative;
+  display: inline-block;
+  width: 116px;
+  height: 5px;
+  margin: 4px 20px 4px 10px;
+  background: #a0a0a0;
+}
+
+.slider-input-slider {
+  position: absolute;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  bottom: -5px;
+  background: #cccccc;
+  border-radius: 100%;
+  box-shadow: 0 0 2px 0 black;
+}

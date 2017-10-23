@@ -1,0 +1,23 @@
+.radio-selector-button {
+  background: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.radio-selector-button:focus {
+  outline: none;
+}
+
+.radio-selector-button.active {
+  border-bottom: 1px solid black;
+}
+
+.radio-selector-button:not(.active):hover {
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.radio-selector-item:not(:first-of-type)::before {
+  content: '|';
+}

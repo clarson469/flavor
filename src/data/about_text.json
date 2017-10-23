@@ -1,0 +1,10 @@
+{
+  "header": "Flavor -- (v0.1.0)",
+  "subheader": "--- Placeholder \"about\" text ---",
+  "content": [
+    "At the minute, this is pretty barebones. And super ugly. And doesn't do what it should.",
+    "Eventually, though, it'll be a means of data visualisation for ingredient pairings (or <em>flavor</em> pairings, see what I did there...) and a recipe building tool, made with ReactJS and D3"
+  ],
+  "copyright": "Flavor ##COPYRIGHT## Copyright ##DATE## clarson469",
+  "contact": "https://clarson469.github.io/flavor | clarson469@live.com"
+}

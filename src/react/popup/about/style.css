@@ -1,0 +1,19 @@
+#about {
+  padding: 10px 20px 10px 30px;
+}
+
+#about > hr { border: 0.5px solid #444444; }
+
+#about-footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: calc( 70vw - 50px );
+  height: 60px;
+}
+
+#about-footer > p { position: absolute; }
+
+#about-footer > p:first-of-type { bottom: 0; font-size: 0.6rem; }
+#about-footer > p:last-of-type { top: 0; font-size: 0.8rem; }

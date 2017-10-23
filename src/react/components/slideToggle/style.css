@@ -1,0 +1,45 @@
+.slide-toggle-container {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.slide-toggle {
+  appearance: none;
+  background: #a0a0a0;
+  border: none;
+  height: 15px;
+  width: 40px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px 0px white;
+  margin-left: 10px;
+  padding: none;
+}
+
+.slide-toggle:focus {
+  outline: none;
+}
+
+.slide-toggle::before {
+  content: '';
+  position: relative;
+  bottom: 3px;
+  left: 0;
+  display: inline-block;
+  background: #cccccc;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  box-shadow: 0 0 2px 0 black;
+  transition: left 350ms;
+}
+
+.slide-toggle.on {
+  background: #00bfff;
+}
+
+.slide-toggle.on::before {
+  left: 20px;
+}

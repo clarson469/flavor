@@ -1,0 +1,25 @@
+#header {
+  width: 100vw;
+  height: 100px;
+  background: #a0a0a0;
+}
+
+#header>.float-child {
+  top: 60px;
+}
+
+#search-dropdown {
+  border: 1px solid red;
+  padding-left: 10px;
+  height: 230px;
+}
+
+#search-dropdown li {
+  list-style-type: none;
+}
+
+.search-dd-item {
+  padding: 5px 5px;
+  border: 1px solid red;
+  width: 170px;
+}

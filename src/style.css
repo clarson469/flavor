@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html { font-size: 18px; }
+.hide { display: none; }
+.container, .container-left {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+}
+.container-left {
+  justify-content: center;
+  align-items: flex-start;
+}
+.invisible-wrapper {
+  position: absolute;
+  display: inline;
+}
+.child { position: relative; }
+.fill-child { height: 100%; width: 100%; }
+.float-child, .float-right, .float-top {
+  position: absolute;
+}
+.float-right { right: 0; }
+.float-top { top: 0; }
+.scroll-text { overflow-y: auto; }
+.clickable-obj { cursor: pointer; }
+.tab-right {
+  width: 10px;
+  height: 40px;
+  border-radius: 10px 40px 40px 10px;
+  margin-right: -15px;
+}
+.tab-right::after {
+  content: '';
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  border-top: 2px solid #3e3e3e;
+  border-right: 2px solid #3e3e3e;
+}
+.tab-right.open::after {
+  transform: rotate(-135deg);
+  margin-left: -4px;
+}
+.tab-right.closed::after {
+  transform: rotate(45deg);
+  margin-left: -6px;
+}
+.no-outline:focus { outline: none; }
+.unstyled-list-item { list-style: none; }
+[class*="flip-list"] {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flip-list {
+  justify-content: center;
+  align-items: baseline;
+}
+.flip-list-left {
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.flip-list-item { width: 33%; }

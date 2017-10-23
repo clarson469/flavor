@@ -1,0 +1,39 @@
+.hamburger-button {
+  position: relative;
+  height: 50px;
+  width: 80px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: white;
+  transition: box-shadow 100ms;
+}
+
+.hamburger-button.closed {
+  box-shadow: inset 0 0 0 23.5px #a0a0a0;
+}
+
+.hamburger-button.open {
+  box-shadow: inset 0 0 0 25px #a0a0a0;
+}
+
+.hamburger-button::before, .hamburger-button::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  background: white;
+  height: 3px;
+  width: 33px;
+  right: 23.5px;
+  transition: all 600ms;
+}
+
+.hamburger-button.closed::before, .hamburger-button.closed::after {
+  transform: rotate(0);
+}
+
+.hamburger-button.closed::before { top: 12px; }
+.hamburger-button.closed::after { bottom: 12px; }
+
+.hamburger-button.open::before { transform: rotate(45deg); top: 23.5px; }
+.hamburger-button.open::after { transform: rotate(-45deg); bottom: 23.5px; }

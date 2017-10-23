@@ -1,0 +1,24 @@
+.drop-search-dropper {
+  z-index: 10;
+  position: absolute;
+  width: 140px;
+  height: 180px;
+  padding: 10px 5px 10px 7px;
+  background: #ebebeb;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.4);
+}
+
+.drop-search-item {
+  border: none;
+  background: #ebebeb;
+}
+
+.drop-search-item:hover {
+  background: #c4c4c4;
+}
+
+.drop-search-item > button {
+  border: none;
+  background: inherit;
+  padding: 3px 0 3px 0;
+}
